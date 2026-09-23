@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>   
-    <header>
-        <img src="./assets/IMG/logo.png" alt="Logo de Hype Pilates">
-            <nav>
+    <header class="header">
+        <img src="./assets/IMG/logo.png" class="logo" alt="Logo de Hype Pilates">
+            <nav class="header_nav">
                 <ul class="header_nav-list"> 
                     <li><a href="#nosotros">Nosotros</a></li>
                     <li><a href="pages/planes.html">Planes</a></li>
@@ -21,59 +21,61 @@
     </header>
 
 <main>
-    <section id="nosotros">
+    <section class="nosotros" id="nosotros">
         <h1>HYPE PILATES</h1>
         <p>En Hype Pilates creemos en el movimiento como una forma de sentirte mejor. Somos un espacio dedicado al Pilates y al entrenamiento funcional, con clases pensadas para adaptarse a cada persona, su ritmo y sus objetivos. Buscamos acompañarte a mejorar tu fuerza, movilidad y bienestar en un ambiente cercano, cuidado y motivador.</p>
     </section>
-    <section>
+    <section class="objetivos" id="objetivos">
             <h2>Fuerza — Movilidad — Bienestar</h2>
             <p>Entrenamos para mejorar la postura, la movilidad, la fuerza y la calidad de movimiento en la vida cotidiana.</p>
     </section>
-    <section id="servicios">
-        <h2>Nuestras clases</h2>
-            <article>
-                    <h3>Pilates Reformer</h3>
-                    <p>
-                        Entrenamiento sobre máquinas Reformer que combina fuerza,
-                        control, movilidad y estabilidad. Las clases se adaptan
-                        a distintos niveles y permiten trabajar el cuerpo de manera
-                        integral y progresiva.
-                    </p>
-                    <figure>
-                        <img src="./assets/IMG/reformer.png" alt="Clase de Pilates Reformer">
-                        <figcaption>Clase de Pilates Reformer</figcaption>
-                    </figure>
-            </article>
-
-            <article>
-                    <h3>Pilates Mat</h3>
-                    <p>
-                        Trabajo sobre colchoneta enfocado en fortalecer el centro
-                        del cuerpo, mejorar la postura, la flexibilidad y la
-                        conciencia corporal.
-                    </p>
-                    <figure>
-                        <img src="./assets/IMG/mat.png" alt="Clase de Pilates Mat">
-                        <figcaption>Clase de Pilates Mat sobre colchoneta.</figcaption>
-                    </figure>
-            </article>
-
-            <article>
-                    <h3>Entrenamiento Functional</h3>
-                    <p>
+    <section class="servicios" id="servicios">
+        <article class="clases">
+            <h2>Nuestras clases</h2>
+            <div class="clases-content">
+                <div class="clases-item">
+                        <h3>Pilates Reformer</h3>
+                        <p class="clases-description">
+                            Entrenamiento sobre máquinas Reformer que combina fuerza,
+                            control, movilidad y estabilidad. Las clases se adaptan
+                            a distintos niveles y permiten trabajar el cuerpo de manera
+                            integral y progresiva.
+                        </p>
+                        <figure class="clases-figure"> 
+                            <img src="./assets/IMG/reformer.png" alt="Clase de Pilates Reformer">
+                            <figcaption>Clase de Pilates Reformer</figcaption>
+                        </figure>
+                    </div>
+                    <div class="clases-item">
+                        <h3>Pilates Mat</h3>
+                        <p class="clases-description">
+                            Trabajo sobre colchoneta enfocado en fortalecer el centro
+                            del cuerpo, mejorar la postura, la flexibilidad y la
+                            conciencia corporal.
+                        </p>
+                        <figure class="clases-figure">
+                            <img src="./assets/IMG/mat.png" alt="Clase de Pilates Mat">
+                            <figcaption>Clase de Pilates Mat sobre colchoneta.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="clases-item">
+                    <h3>Entrenamiento Funcional</h3>
+                    <p class="clases-description">
                         Entrenamiento dinámico orientado a mejorar fuerza,
                         resistencia, coordinación y movilidad a través de
                         ejercicios completos.
                     </p>
-                    <figure>
+                    <figure class="clases-figure">
                         <img src="./assets/IMG/functional.png" alt="Entrenamiento funcional">
                         <figcaption>Clase de entrenamiento funcional</figcaption>
                     </figure>
-            </article>
+                    </div>
+            </div>
+        </article>
     </section>
 </main>
 
-<footer>
+<footer class="footer">
         <p>&copy; Hype Pilates - Todos los derechos reservados</p>
         <a href="https://www.instagram.com/hypepilates" target="_blank">Seguinos en Instagram</a>
         <a href="https://www.tiktok.com/@hypepilates" target="_blank">Seguinos en Tiktok</a>

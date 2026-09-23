@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 
 body {
     font-family: "Montserrat", sans-serif;
@@ -7,8 +13,24 @@ body {
 }
 
 /* HEADER */
+.header {
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_nav {
+    display: flex;
+    align-items: center;        
+    padding: 1rem;
+}
+
 .header_nav-list {
     list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
 }
 .header_nav-list li a {
     color: #22342c;
@@ -16,7 +38,48 @@ body {
     font-size: 1rem;
 }
 
+.logo {
+    width: 70px;
+    height: auto;
+}
+
 /* NOSOTROS */
+.nosotros, .objetivos, .servicios {
+    display: flex;
+    flex-direction: column;     
+    gap: 1rem;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1rem;
+}
+
+.clases {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.clases-content {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.clases-item {
+    max-width: 400px;
+}
+
+.clases-description {
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    height: 100px;
+}
+
+.clases-figure img{
+    width: 100%;
+    max-width: 400px;
+} 
+
 h1 {
     color: #22342c;
     font-size: 3.5rem;
@@ -37,11 +100,108 @@ p {
     color: #1E241F;
 }
 
-footer {
-    background-color: #D9D0C6;
+/* PLANES */
+.planes {
+    display: flex;
+    flex-direction: column; 
+    gap: 1rem;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1rem;
 }
 
-footer p,
-footer a {
+.planes-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.planes-list {
+    list-style: none;
+    display: flex;  
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* HORARIOS */
+.horarios {
+    display: flex;
+    flex-direction: column; 
+    gap: 1rem;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1rem;
+}
+
+.horarios-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.horarios-list {
+    list-style: none;
+    display: flex;  
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+/* GALERIA */
+.galeria {
+    display: flex;
+    flex-direction: column; 
+    gap: 1rem;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1rem;
+}
+
+.galeria-content {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.galeria-figure img {
+    max-width: 400px;
+}
+
+/* CONTACTO */
+.contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1rem;
+}
+
+.contacto-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contacto-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #D9D0C6;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;           
+}
+
+.footer p,
+.footer a {
     color: #22342C;
 }
+
