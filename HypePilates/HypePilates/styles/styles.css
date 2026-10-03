@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f6efe7;
+}
+
+/* TIPOGRAFIA */
+h1 {
+    color: #22342c;
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+h2 {
+    color: #4F6658;
+    font-size: 1.75rem;
+}
+
+h3 {
+    color: #5C6E63;
+    font-size: 1.5rem;
+}
+
+p {
+    color: #1E241F;
+}
+
+/* HEADER */
+header {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav a {
+    color: #22342c;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+header img {
+    width: 70px;
+    height: auto;
+}
+
+/* SECCIONES (todas las páginas) */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;     
+    gap: 1rem;
+    padding: 1.5rem 2rem;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+main ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* INDEX */
+.inicio {
+    grid-template-areas: 
+        "nosotros"
+        "frase"
+        "clases";
+}
+
+.nosotros {
+    grid-area: nosotros;
+}
+.frase {
+    grid-area: frase;
+}
+.clases {
+    grid-area: clases;
+}
+
+
+/* TARJETAS (clases del index y fotos de galería) */
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.tarjetas img {
+    width: 100%;
+}
+
+.clases-item {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 0.5rem;
+}
+
+/* FOOTER */
+footer {
+    background-color: #D9D0C6;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;           
+}
+
+footer p,
+footer a {
+    color: #22342C;
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+    .tarjetas,
+    main ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    header,
+    section,
+    footer {
+        padding: 1.5rem 2rem;
+    }
+
+    .tarjetas,
+    main ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
