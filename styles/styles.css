@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-family: "Montserrat", sans-serif;
     background-color: #f6efe7;
@@ -36,38 +35,9 @@ p {
     color: #1E241F;
 }
 
-h1,
-h2,
-h3,
-p,
-ul,
-figure {
-    margin: 0;
-}
-
-ul {
-    padding: 0;
-}
-
-/* HEADER */
+/* HEADER Y NAVBAR */
 header {
-    padding: 1.5rem;
-}
-
-.navbar,
-.navbar .container-fluid {
-    padding: 0;
-}
-
-.navbar-nav {
-    align-items: center;
-    gap: 1rem;
-}
-
-.navbar-nav .nav-link {
-    color: #22342c;
-    text-decoration: none;
-    font-size: 1rem;
+    padding: 24px;
 }
 
 header img {
@@ -75,23 +45,36 @@ header img {
     height: auto;
 }
 
-.navbar-nav .nav-link {
-    transition: color 0.3s;
+.barra-nav,
+.contenedor-nav {
+    padding: 0;
 }
 
-.navbar-nav .nav-link:hover {
+.lista-nav {
+    align-items: center;
+    gap: 16px;
+}
+
+.enlace-nav {
+    color: #22342c;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.enlace-nav:hover {
     color: #4F6658;
 }
 
-.navbar-nav .nav-link:focus {
-    border-bottom: 2px solid #4F6658;
+.enlace-nav:focus {
+    color: #4F6658;
+    box-shadow: 0 2px 0 #4F6658;
 }
 
-.navbar-nav .nav-link:active {
+.enlace-nav:active {
     color: #D9D0C6;
 }
 
-.navbar-nav .nav-link.active {
+.enlace-actual {
     color: #4F6658;
     font-weight: 700;
 }
@@ -100,27 +83,20 @@ header img {
 main {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 16px;
 }
 
 section {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    padding: 1.5rem 2rem;
+    gap: 16px;
+    padding: 24px 32px;
 }
 
 article {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-}
-
-main ul {
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 16px;
 }
 
 /* INDEX */
@@ -148,153 +124,143 @@ main ul {
     grid-area: preguntas;
 }
 
-
-/* TARJETAS (clases del index y fotos de galería) */
-
+/* TARJETAS (clases del index) */
 .tarjetas {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 32px;
 }
 
-.tarjetas img {
-    width: 100%;
-}
-
-.card {
+.tarjeta-clase {
     background-color: #fbf8f4;
     border: 1px solid #D9D0C6;
-    transition: border-color 0.3s;
 }
 
-.card:hover {
+.tarjeta-clase:hover {
     border-color: #4F6658;
 }
 
-.card-body {
+.tarjeta-body {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    gap: 0.75rem;
+    gap: 12px;
     padding: 20px;
 }
 
-.card .btn {
+.boton {
     justify-self: start;
+    padding: 8px 16px;
     background-color: #4F6658;
     color: #f6efe7;
     border: 1px solid #4F6658;
-    transition: background-color 0.3s, color 0.3s;
+    border-radius: 6px;
+    text-decoration: none;
 }
 
-.card .btn:hover {
+.boton:hover {
     background-color: #22342c;
     color: #f6efe7;
 }
 
-.card .btn:focus {
-    box-shadow: 0 0 0 0.2rem #D9D0C6;
+.boton:focus {
+    outline: 3px solid #D9D0C6;
 }
 
-.card .btn:active {
+.boton:active {
     background-color: #D9D0C6;
     color: #22342c;
 }
 
-.accordion-item {
+/* LISTAS DE PLANES Y CONTACTO */
+.lista-tarjetas {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding-left: 0;
+}
+
+/* ACORDEON (index y horarios) */
+.acordeon-item {
     background-color: #fbf8f4;
     border-color: #D9D0C6;
 }
 
-.accordion-button {
+.acordeon-boton {
     background-color: #fbf8f4;
     color: #22342c;
     font-weight: 700;
-    transition: background-color 0.3s;
 }
 
-.accordion-button:hover {
+.acordeon-boton:hover {
     background-color: #f6efe7;
 }
 
-.accordion-button:focus {
-    box-shadow: 0 0 0 0.2rem #D9D0C6;
+.acordeon-boton:focus {
+    box-shadow: 0 0 0 3px #D9D0C6;
 }
 
-.accordion-button:active {
+.acordeon-boton:active {
     background-color: #D9D0C6;
 }
 
-.accordion-button:not(.collapsed) {
+.acordeon-boton[aria-expanded="true"] {
     background-color: #D9D0C6;
     color: #22342c;
 }
 
-.accordion-body {
+.acordeon-body {
     padding: 20px;
 }
 
-.accordion-body ul {
+.lista-horarios {
+    list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 8px;
+    padding-left: 0;
 }
 
-/* GALERÍA: CAROUSEL */
-.carousel {
+/* GALERIA: CARRUSEL */
+.carrusel {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
 }
 
-.carousel-caption {
+.carrusel-caption {
     background-color: rgba(34, 52, 44, 0.7);
-    padding: 0.5rem 1rem;
+    padding: 8px 16px;
 }
 
-.carousel-caption p {
+.carrusel-caption p {
     color: #f6efe7;
 }
 
-.carousel-indicators [data-bs-target] {
-    background-color: #D9D0C6;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    transition: background-color 0.3s;
-}
-
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
+.flecha-carrusel:hover {
     background-color: rgba(34, 52, 44, 0.3);
 }
 
-.carousel-control-prev:focus,
-.carousel-control-next:focus {
+.flecha-carrusel:focus {
     outline: 2px solid #D9D0C6;
 }
 
-.carousel-control-prev:active,
-.carousel-control-next:active {
+.flecha-carrusel:active {
     background-color: rgba(34, 52, 44, 0.5);
 }
 
 /* FOOTER */
 footer {
     background-color: #D9D0C6;
-    padding: 2rem;
+    padding: 32px;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 8px;
 }
 
 footer p,
 footer a {
     color: #22342C;
-}
-
-footer a {
-    transition: color 0.3s;
 }
 
 footer a:hover {
@@ -311,9 +277,8 @@ footer a:active {
 
 /* TABLET */
 @media (min-width: 768px) {
-
     .tarjetas,
-    main ul {
+    .lista-tarjetas {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -331,11 +296,11 @@ footer a:active {
     header,
     section,
     footer {
-        padding: 1.5rem 2rem;
+        padding: 24px 32px;
     }
 
     .tarjetas,
-    main ul {
+    .lista-tarjetas {
         grid-template-columns: repeat(3, 1fr);
     }
 }
