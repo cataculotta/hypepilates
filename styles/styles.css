@@ -249,6 +249,33 @@ article {
     background-color: rgba(34, 52, 44, 0.5);
 }
 
+/* CONTACTO */
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    background-color: #fbf8f4;
+    border: 1px solid #D9D0C6;
+    border-radius: 8px;
+}
+
+.campo:focus {
+    border-color: #4F6658;
+    box-shadow: 0 0 0 3px #D9D0C6;
+}
+
+.boton-form {
+    align-self: flex-start;
+    --bs-btn-bg: #4F6658;
+    --bs-btn-border-color: #4F6658;
+    --bs-btn-hover-bg: #22342c;
+    --bs-btn-hover-border-color: #22342c;
+    --bs-btn-active-bg: #D9D0C6;
+    --bs-btn-active-color: #22342c;
+    --bs-btn-active-border-color: #D9D0C6;
+    --bs-btn-focus-shadow-rgb: 217, 208, 198;
+}
 /* FOOTER */
 footer {
     background-color: #D9D0C6;
