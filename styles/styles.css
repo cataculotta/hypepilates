@@ -171,13 +171,87 @@ article {
     color: #22342c;
 }
 
-/* LISTAS DE PLANES Y CONTACTO */
-.lista-tarjetas {
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 16px;
-    padding-left: 0;
+/* PLANES */
+.plan {
+    background-color: #fbf8f4;
+    border: 1px solid #D9D0C6;
+}
+
+.plan-header {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 20px;
+    background-color: #D9D0C6;
+    border-bottom-color: #D9D0C6;
+}
+
+.plan-nombre {
+    margin-bottom: 0;
+}
+
+.plan-frecuencia {
+    margin-bottom: 0;
+    color: #5C6E63;
+}
+
+.plan-etiqueta {
+    align-self: flex-start;
+    margin-bottom: 8px;
+    padding: 4px 12px;
+    background-color: #f6efe7;
+    color: #4F6658;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.plan-cuerpo {
+    flex-grow: 0;
+    padding: 20px;
+}
+
+.plan-precio {
+    margin-bottom: 0;
+    color: #22342c;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.plan-mes {
+    color: #5C6E63;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.plan-lista {
+    flex-grow: 1;
+}
+
+.plan-item {
+    padding: 12px 20px;
+    background-color: #fbf8f4;
+    color: #1E241F;
+    border-color: #D9D0C6;
+}
+
+.plan-pie {
+    padding: 20px;
+    background-color: #fbf8f4;
+    border-top-color: #D9D0C6;
+}
+
+.plan-destacado {
+    border: 2px solid #4F6658;
+}
+
+.plan-destacado .plan-header {
+    background-color: #4F6658;
+}
+
+.plan-destacado .plan-nombre,
+.plan-destacado .plan-frecuencia {
+    color: #f6efe7;
 }
 
 /* ACORDEON (index y horarios) */
@@ -304,8 +378,7 @@ footer a:active {
 
 /* TABLET */
 @media (min-width: 768px) {
-    .tarjetas,
-    .lista-tarjetas {
+    .tarjetas {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -326,8 +399,7 @@ footer a:active {
         padding: 24px 32px;
     }
 
-    .tarjetas,
-    .lista-tarjetas {
+    .tarjetas {
         grid-template-columns: repeat(3, 1fr);
     }
 }
