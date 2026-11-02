@@ -1,0 +1,30 @@
+@use "../utilities/variables" as *;
+
+.carrusel {
+    width: 100%;
+    max-width: $ancho-carrusel;
+    margin: 0 auto;
+}
+
+.carrusel-caption {
+    background-color: $fondo-leyenda;
+    padding: $espacio-sm $espacio-base;
+
+    p {
+        color: $color-fondo;
+    }
+}
+
+.flecha-carrusel {
+    &:hover {
+        background-color: $fondo-flecha-hover;
+    }
+
+    &:focus {
+        outline: $borde-grueso solid $color-beige;
+    }
+
+    &:active {
+        background-color: $fondo-flecha-active;
+    }
+}

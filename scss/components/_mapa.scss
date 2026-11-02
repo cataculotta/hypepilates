@@ -1,0 +1,46 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.ubicacion {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $espacio-lg;
+    align-items: start;
+}
+
+.ubicacion-info {
+    @include flex-columna($espacio-lg);
+    @extend %caja-clara;
+    padding: $espacio-lg;
+    border-radius: $radio-borde;
+
+    .boton {
+        align-self: flex-start;
+    }
+}
+
+.ubicacion-lista {
+    @extend %lista-limpia;
+    @include flex-columna($espacio-md);
+    margin-bottom: 0;
+}
+
+.ubicacion-dato {
+    display: block;
+    color: $color-verde;
+    font-size: $texto-chico;
+    font-weight: $peso-negrita;
+}
+
+.mapa {
+    width: 100%;
+    height: $alto-mapa;
+    border: $borde-fino solid $color-beige;
+    border-radius: $radio-borde;
+}
+
+@media (min-width: $desktop) {
+    .ubicacion {
+        grid-template-columns: 1fr 2fr;
+    }
+}
