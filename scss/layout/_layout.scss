@@ -1,0 +1,64 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+// Estructura general de todas las páginas
+main {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: start;
+    gap: $espacio-base;
+}
+
+section {
+    @include flex-columna;
+    padding: $espacio-lg $espacio-xl;
+}
+
+article {
+    @include flex-columna;
+}
+
+// Grilla de áreas del index
+.inicio {
+    grid-template-areas:
+        "nosotros"
+        "frase"
+        "clases"
+        "preguntas";
+}
+
+.nosotros {
+    grid-area: nosotros;
+}
+
+.frase {
+    grid-area: frase;
+}
+
+.clases {
+    grid-area: clases;
+}
+
+.preguntas {
+    grid-area: preguntas;
+}
+
+// Grilla de tarjetas (1, 2 o 3 columnas)
+.tarjetas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $espacio-xl;
+}
+
+@media (min-width: $tablet) {
+    .tarjetas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: $desktop) {
+    .tarjetas {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
