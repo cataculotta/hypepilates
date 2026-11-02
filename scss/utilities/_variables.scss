@@ -1,0 +1,53 @@
+// colores 
+$color-fondo: #f6efe7;
+$color-fondo-claro: #fbf8f4;
+$color-beige: #d9d0c6;
+$color-verde: #4f6658;
+$color-verde-oscuro: #22342c;
+$color-verde-gris: #5c6e63;
+$color-texto: #1e241f;
+
+// fondos semistransparentes del carrusel 
+$fondo-leyenda: #22342cb3;
+$fondo-flecha-hover: #22342c4d;
+$fondo-flecha-active: #22342c80;
+
+// tipogragía
+$fuente-principal: "Montserrat", sans-serif;
+$texto-h1: 2.25rem;
+$texto-h1-desktop: 3.5rem;
+$texto-h2: 1.75rem;
+$texto-h2-desktop: 2rem;
+$texto-h3: 1.5rem;
+$texto-base: 1rem;
+$texto-chico: 0.875rem;
+$texto-precio: 2rem;
+$peso-normal: 400;
+$peso-negrita: 700;
+
+// espaciados
+$espacio-xs: 4px;
+$espacio-sm: 8px;
+$espacio-md: 12px;
+$espacio-base: 16px;
+$espacio-tarjeta: 20px;
+$espacio-lg: 24px;
+$espacio-xl: 32px;
+
+// bordes
+$borde-fino: 1px;
+$borde-grueso: 2px;
+$borde-foco: 3px;
+$radio-boton: 6px;
+$radio-borde: 8px;
+$radio-pastilla: 20px;
+
+// anchos
+$ancho-logo: 70px;
+$ancho-carrusel: 800px;
+$alto-mapa: 350px;
+$sombra-foco: 0 0 0 $borde-foco $color-beige;
+
+// breakpoints
+$tablet: 768px;
+$desktop: 1024px;
