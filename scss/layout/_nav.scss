@@ -1,0 +1,35 @@
+@use "../utilities/variables" as *;
+
+.barra-nav,
+.contenedor-nav {
+    padding: 0;
+}
+
+.lista-nav {
+    align-items: center;
+    gap: $espacio-base;
+}
+
+.enlace-nav {
+    color: $color-verde-oscuro;
+    text-decoration: none;
+    font-size: $texto-base;
+
+    &:hover {
+        color: $color-verde;
+    }
+
+    &:focus {
+        color: $color-verde;
+        box-shadow: 0 $borde-grueso 0 $color-verde;
+    }
+
+    &:active {
+        color: $color-beige;
+    }
+}
+
+.enlace-actual {
+    color: $color-verde;
+    font-weight: $peso-negrita;
+}

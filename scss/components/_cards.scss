@@ -1,0 +1,98 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+// Tarjetas de clases (index)
+.tarjeta-clase {
+    @extend %caja-clara;
+
+    &:hover {
+        border-color: $color-verde;
+    }
+}
+
+.tarjeta-body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: $espacio-md;
+    padding: $espacio-tarjeta;
+}
+
+// Tarjetas de planes
+.plan {
+    @extend %caja-clara;
+}
+
+.plan-header {
+    @include flex-columna($espacio-xs);
+    padding: $espacio-tarjeta;
+    background-color: $color-beige;
+    border-bottom-color: $color-beige;
+}
+
+.plan-nombre {
+    margin-bottom: 0;
+}
+
+.plan-frecuencia {
+    margin-bottom: 0;
+    color: $color-verde-gris;
+}
+
+.plan-etiqueta {
+    align-self: flex-start;
+    margin-bottom: $espacio-sm;
+    padding: $espacio-xs $espacio-md;
+    background-color: $color-fondo;
+    color: $color-verde;
+    border-radius: $radio-pastilla;
+    font-size: $texto-chico;
+    font-weight: $peso-negrita;
+}
+
+.plan-cuerpo {
+    flex-grow: 0;
+    padding: $espacio-tarjeta;
+}
+
+.plan-precio {
+    margin-bottom: 0;
+    color: $color-verde-oscuro;
+    font-size: $texto-precio;
+    font-weight: $peso-negrita;
+}
+
+.plan-mes {
+    color: $color-verde-gris;
+    font-size: $texto-base;
+    font-weight: $peso-normal;
+}
+
+.plan-lista {
+    flex-grow: 1;
+}
+
+.plan-item {
+    padding: $espacio-md $espacio-tarjeta;
+    background-color: $color-fondo-claro;
+    color: $color-texto;
+    border-color: $color-beige;
+}
+
+.plan-pie {
+    padding: $espacio-tarjeta;
+    background-color: $color-fondo-claro;
+    border-top-color: $color-beige;
+}
+
+.plan-destacado {
+    border: $borde-grueso solid $color-verde;
+
+    .plan-header {
+        background-color: $color-verde;
+    }
+
+    .plan-nombre,
+    .plan-frecuencia {
+        color: $color-fondo;
+    }
+}

@@ -1,0 +1,25 @@
+@use "../utilities/variables" as *;
+
+.boton {
+    justify-self: start;
+    padding: $espacio-sm $espacio-base;
+    background-color: $color-verde;
+    color: $color-fondo;
+    border: $borde-fino solid $color-verde;
+    border-radius: $radio-boton;
+    text-decoration: none;
+
+    &:hover {
+        background-color: $color-verde-oscuro;
+        color: $color-fondo;
+    }
+
+    &:focus {
+        outline: $borde-foco solid $color-beige;
+    }
+
+    &:active {
+        background-color: $color-beige;
+        color: $color-verde-oscuro;
+    }
+}

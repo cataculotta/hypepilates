@@ -1,0 +1,19 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.formulario-contacto {
+    @include flex-columna;
+    @extend %caja-clara;
+    padding: $espacio-lg;
+    border-radius: $radio-borde;
+
+    .boton {
+        align-self: flex-start;
+        cursor: pointer;
+    }
+}
+
+.campo:focus {
+    border-color: $color-verde;
+    box-shadow: $sombra-foco;
+}

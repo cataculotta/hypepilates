@@ -1,0 +1,33 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+footer {
+    @include flex-columna($espacio-sm);
+    background-color: $color-beige;
+    padding: $espacio-xl;
+
+    p,
+    a {
+        color: $color-verde-oscuro;
+    }
+
+    a {
+        &:hover {
+            color: $color-verde;
+        }
+
+        &:focus {
+            outline: $borde-grueso solid $color-verde;
+        }
+
+        &:active {
+            color: $color-verde-gris;
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    footer {
+        padding: $espacio-lg $espacio-xl;
+    }
+}
