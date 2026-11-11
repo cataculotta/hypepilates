@@ -1,33 +1,33 @@
-@use "../utilities/variables" as *;
-@use "../utilities/mixins" as *;
+@use "../utilities/variables";
+@use "../utilities/mixins";
 
 footer {
-    @include flex-columna($espacio-sm);
-    background-color: $color-beige;
-    padding: $espacio-xl;
+    @include mixins.flex-columna(variables.$espacio-base);
+    background-color: variables.$color-beige;
+    padding: variables.$espacio-xl;
 
     p,
     a {
-        color: $color-verde-oscuro;
+        color: variables.$color-verde-oscuro;
     }
 
     a {
         &:hover {
-            color: $color-verde;
+            color: variables.$color-verde;
         }
 
         &:focus {
-            outline: $borde-grueso solid $color-verde;
+            outline: variables.$borde-grueso solid variables.$color-verde;
         }
 
         &:active {
-            color: $color-verde-gris;
+            color: variables.$color-verde-gris;
         }
     }
 }
 
-@media (min-width: $desktop) {
+@media (min-width: variables.$desktop) {
     footer {
-        padding: $espacio-lg $espacio-xl;
+        padding: variables.$espacio-lg variables.$espacio-xl;
     }
 }

@@ -1,16 +1,16 @@
-@use "../utilities/variables" as *;
+@use "../utilities/variables";
 
 header {
-    padding: $espacio-lg;
+    padding: variables.$espacio-lg;
 
     img {
-        width: $ancho-logo;
+        width: variables.$ancho-logo;
         height: auto;
     }
 }
 
-@media (min-width: $desktop) {
+@media (min-width: variables.$desktop) {
     header {
-        padding: $espacio-lg $espacio-xl;
+        padding: variables.$espacio-lg variables.$espacio-xl;
     }
 }

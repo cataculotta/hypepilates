@@ -1,20 +1,21 @@
-@use "../utilities/variables" as *;
-@use "../utilities/mixins" as *;
+@use "../utilities/variables";
+@use "../utilities/mixins";
+@use "../utilities/extends";
 
 // Tarjetas de clases (index)
 .tarjeta-clase {
     @extend %caja-clara;
 
     &:hover {
-        border-color: $color-verde;
+        border-color: variables.$color-verde;
     }
 }
 
 .tarjeta-body {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    gap: $espacio-md;
-    padding: $espacio-tarjeta;
+    gap: variables.$espacio-md;
+    padding: variables.$espacio-tarjeta;
 }
 
 // Tarjetas de planes
@@ -23,10 +24,10 @@
 }
 
 .plan-header {
-    @include flex-columna($espacio-xs);
-    padding: $espacio-tarjeta;
-    background-color: $color-beige;
-    border-bottom-color: $color-beige;
+    @include mixins.flex-columna(variables.$espacio-xs);
+    padding: variables.$espacio-tarjeta;
+    background-color: variables.$color-beige;
+    border-bottom-color: variables.$color-beige;
 }
 
 .plan-nombre {
@@ -35,36 +36,36 @@
 
 .plan-frecuencia {
     margin-bottom: 0;
-    color: $color-verde-gris;
+    color: variables.$color-verde-gris;
 }
 
 .plan-etiqueta {
     align-self: flex-start;
-    margin-bottom: $espacio-sm;
-    padding: $espacio-xs $espacio-md;
-    background-color: $color-fondo;
-    color: $color-verde;
-    border-radius: $radio-pastilla;
-    font-size: $texto-chico;
-    font-weight: $peso-negrita;
+    margin-bottom: variables.$espacio-sm;
+    padding: variables.$espacio-xs variables.$espacio-md;
+    background-color: variables.$color-fondo;
+    color: variables.$color-verde;
+    border-radius: variables.$radio-pastilla;
+    font-size: variables.$texto-chico;
+    font-weight: variables.$peso-negrita;
 }
 
 .plan-cuerpo {
     flex-grow: 0;
-    padding: $espacio-tarjeta;
+    padding: variables.$espacio-tarjeta;
 }
 
 .plan-precio {
     margin-bottom: 0;
-    color: $color-verde-oscuro;
-    font-size: $texto-precio;
-    font-weight: $peso-negrita;
+    color: variables.$color-verde-oscuro;
+    font-size: variables.$texto-precio;
+    font-weight: variables.$peso-negrita;
 }
 
 .plan-mes {
-    color: $color-verde-gris;
-    font-size: $texto-base;
-    font-weight: $peso-normal;
+    color: variables.$color-verde-gris;
+    font-size: variables.$texto-base;
+    font-weight: variables.$peso-normal;
 }
 
 .plan-lista {
@@ -72,27 +73,27 @@
 }
 
 .plan-item {
-    padding: $espacio-md $espacio-tarjeta;
-    background-color: $color-fondo-claro;
-    color: $color-texto;
-    border-color: $color-beige;
+    padding: variables.$espacio-md variables.$espacio-tarjeta;
+    background-color: variables.$color-fondo-claro;
+    color: variables.$color-texto;
+    border-color: variables.$color-beige;
 }
 
 .plan-pie {
-    padding: $espacio-tarjeta;
-    background-color: $color-fondo-claro;
-    border-top-color: $color-beige;
+    padding: variables.$espacio-tarjeta;
+    background-color: variables.$color-fondo-claro;
+    border-top-color: variables.$color-beige;
 }
 
 .plan-destacado {
-    border: $borde-grueso solid $color-verde;
+    border: variables.$borde-grueso solid variables.$color-verde;
 
     .plan-header {
-        background-color: $color-verde;
+        background-color: variables.$color-verde;
     }
 
     .plan-nombre,
     .plan-frecuencia {
-        color: $color-fondo;
+        color: variables.$color-fondo;
     }
 }

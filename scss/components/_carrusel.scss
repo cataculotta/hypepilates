@@ -1,30 +1,30 @@
-@use "../utilities/variables" as *;
+@use "../utilities/variables";
 
 .carrusel {
     width: 100%;
-    max-width: $ancho-carrusel;
+    max-width: variables.$ancho-carrusel;
     margin: 0 auto;
 }
 
 .carrusel-caption {
-    background-color: $fondo-leyenda;
-    padding: $espacio-sm $espacio-base;
+    background-color: variables.$fondo-leyenda;
+    padding: variables.$espacio-sm variables.$espacio-base;
 
     p {
-        color: $color-fondo;
+        color: variables.$color-fondo;
     }
 }
 
 .flecha-carrusel {
     &:hover {
-        background-color: $fondo-flecha-hover;
+        background-color: variables.$fondo-flecha-hover;
     }
 
     &:focus {
-        outline: $borde-grueso solid $color-beige;
+        outline: variables.$borde-grueso solid variables.$color-beige;
     }
 
     &:active {
-        background-color: $fondo-flecha-active;
+        background-color: variables.$fondo-flecha-active;
     }
 }

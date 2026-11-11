@@ -1,11 +1,12 @@
-@use "../utilities/variables" as *;
-@use "../utilities/mixins" as *;
+@use "../utilities/variables";
+@use "../utilities/mixins";
+@use "../utilities/extends";
 
 .formulario-contacto {
-    @include flex-columna;
+    @include mixins.flex-columna(variables.$espacio-base);
     @extend %caja-clara;
-    padding: $espacio-lg;
-    border-radius: $radio-borde;
+    padding: variables.$espacio-lg;
+    border-radius: variables.$radio-borde;
 
     .boton {
         align-self: flex-start;
@@ -14,6 +15,6 @@
 }
 
 .campo:focus {
-    border-color: $color-verde;
-    box-shadow: $sombra-foco;
+    border-color: variables.$color-verde;
+    box-shadow: variables.$sombra-foco;
 }

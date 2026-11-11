@@ -1,0 +1,11 @@
+@use "variables";
+
+%caja-clara {
+    background-color: variables.$color-fondo-claro;
+    border: variables.$borde-fino solid variables.$color-beige;
+}
+
+%lista-limpia {
+    list-style: none;
+    padding-left: 0;
+}

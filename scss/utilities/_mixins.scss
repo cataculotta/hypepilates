@@ -1,17 +1,6 @@
-@use "variables" as *;
 
-@mixin flex-columna($separacion: $espacio-base) {
+@mixin flex-columna($separacion) {
     display: flex;
     flex-direction: column;
     gap: $separacion;
-}
-
-%caja-clara {
-    background-color: $color-fondo-claro;
-    border: $borde-fino solid $color-beige;
-}
-
-%lista-limpia {
-    list-style: none;
-    padding-left: 0;
 }
