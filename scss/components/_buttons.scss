@@ -1,25 +1,25 @@
-@use "../utilities/variables" as *;
+@use "../utilities/variables";
 
 .boton {
     justify-self: start;
-    padding: $espacio-sm $espacio-base;
-    background-color: $color-verde;
-    color: $color-fondo;
-    border: $borde-fino solid $color-verde;
-    border-radius: $radio-boton;
+    padding: variables.$espacio-sm variables.$espacio-base;
+    background-color: variables.$color-verde;
+    color: variables.$color-fondo;
+    border: variables.$borde-fino solid variables.$color-verde;
+    border-radius: variables.$radio-boton;
     text-decoration: none;
 
     &:hover {
-        background-color: $color-verde-oscuro;
-        color: $color-fondo;
+        background-color: variables.$color-verde-oscuro;
+        color: variables.$color-fondo;
     }
 
     &:focus {
-        outline: $borde-foco solid $color-beige;
+        outline: variables.$borde-foco solid variables.$color-beige;
     }
 
     &:active {
-        background-color: $color-beige;
-        color: $color-verde-oscuro;
+        background-color: variables.$color-beige;
+        color: variables.$color-verde-oscuro;
     }
 }

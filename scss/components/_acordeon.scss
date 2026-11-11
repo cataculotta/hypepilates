@@ -1,39 +1,40 @@
-@use "../utilities/variables" as *;
-@use "../utilities/mixins" as *;
+@use "../utilities/variables";
+@use "../utilities/mixins";
+@use "../utilities/extends";
 
 .acordeon-item {
-    background-color: $color-fondo-claro;
-    border-color: $color-beige;
+    background-color: variables.$color-fondo-claro;
+    border-color: variables.$color-beige;
 }
 
 .acordeon-boton {
-    background-color: $color-fondo-claro;
-    color: $color-verde-oscuro;
-    font-weight: $peso-negrita;
+    background-color: variables.$color-fondo-claro;
+    color: variables.$color-verde-oscuro;
+    font-weight: variables.$peso-negrita;
 
     &:hover {
-        background-color: $color-fondo;
+        background-color: variables.$color-fondo;
     }
 
     &:focus {
-        box-shadow: $sombra-foco;
+        box-shadow: variables.$sombra-foco;
     }
 
     &:active {
-        background-color: $color-beige;
+        background-color: variables.$color-beige;
     }
 
     &[aria-expanded="true"] {
-        background-color: $color-beige;
-        color: $color-verde-oscuro;
+        background-color: variables.$color-beige;
+        color: variables.$color-verde-oscuro;
     }
 }
 
 .acordeon-body {
-    padding: $espacio-tarjeta;
+    padding: variables.$espacio-tarjeta;
 }
 
 .lista-horarios {
     @extend %lista-limpia;
-    @include flex-columna($espacio-sm);
+    @include mixins.flex-columna(variables.$espacio-sm);
 }

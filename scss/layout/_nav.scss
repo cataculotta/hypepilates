@@ -1,4 +1,4 @@
-@use "../utilities/variables" as *;
+@use "../utilities/variables";
 
 .barra-nav,
 .contenedor-nav {
@@ -7,29 +7,29 @@
 
 .lista-nav {
     align-items: center;
-    gap: $espacio-base;
+    gap: variables.$espacio-base;
 }
 
 .enlace-nav {
-    color: $color-verde-oscuro;
+    color: variables.$color-verde-oscuro;
     text-decoration: none;
-    font-size: $texto-base;
+    font-size: variables.$texto-base;
 
     &:hover {
-        color: $color-verde;
+        color: variables.$color-verde;
     }
 
     &:focus {
-        color: $color-verde;
-        box-shadow: 0 $borde-grueso 0 $color-verde;
+        color: variables.$color-verde;
+        box-shadow: 0 variables.$borde-grueso 0 variables.$color-verde;
     }
 
     &:active {
-        color: $color-beige;
+        color: variables.$color-beige;
     }
 }
 
 .enlace-actual {
-    color: $color-verde;
-    font-weight: $peso-negrita;
+    color: variables.$color-verde;
+    font-weight: variables.$peso-negrita;
 }

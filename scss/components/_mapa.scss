@@ -1,18 +1,19 @@
-@use "../utilities/variables" as *;
-@use "../utilities/mixins" as *;
+@use "../utilities/variables";
+@use "../utilities/mixins";
+@use "../utilities/extends";
 
 .ubicacion {
     display: grid;
     grid-template-columns: 1fr;
-    gap: $espacio-lg;
+    gap: variables.$espacio-lg;
     align-items: start;
 }
 
 .ubicacion-info {
-    @include flex-columna($espacio-lg);
+    @include mixins.flex-columna(variables.$espacio-lg);
     @extend %caja-clara;
-    padding: $espacio-lg;
-    border-radius: $radio-borde;
+    padding: variables.$espacio-lg;
+    border-radius: variables.$radio-borde;
 
     .boton {
         align-self: flex-start;
@@ -21,25 +22,25 @@
 
 .ubicacion-lista {
     @extend %lista-limpia;
-    @include flex-columna($espacio-md);
+    @include mixins.flex-columna(variables.$espacio-md);
     margin-bottom: 0;
 }
 
 .ubicacion-dato {
     display: block;
-    color: $color-verde;
-    font-size: $texto-chico;
-    font-weight: $peso-negrita;
+    color: variables.$color-verde;
+    font-size: variables.$texto-chico;
+    font-weight: variables.$peso-negrita;
 }
 
 .mapa {
     width: 100%;
-    height: $alto-mapa;
-    border: $borde-fino solid $color-beige;
-    border-radius: $radio-borde;
+    height: variables.$alto-mapa;
+    border: variables.$borde-fino solid variables.$color-beige;
+    border-radius: variables.$radio-borde;
 }
 
-@media (min-width: $desktop) {
+@media (min-width: variables.$desktop) {
     .ubicacion {
         grid-template-columns: 1fr 2fr;
     }
