@@ -302,31 +302,31 @@ footer a:active {
   color: #f6efe7;
 }
 
-.acordeon-item {
+.desplegable-item {
   background-color: #fbf8f4;
   border-color: #d9d0c6;
 }
 
-.acordeon-boton {
+.desplegable-boton {
   background-color: #fbf8f4;
   color: #22342c;
   font-weight: 700;
 }
-.acordeon-boton:hover {
+.desplegable-boton:hover {
   background-color: #f6efe7;
 }
-.acordeon-boton:focus {
+.desplegable-boton:focus {
   box-shadow: 0 0 0 3px #d9d0c6;
 }
-.acordeon-boton:active {
+.desplegable-boton:active {
   background-color: #d9d0c6;
 }
-.acordeon-boton[aria-expanded=true] {
+.desplegable-boton[aria-expanded=true] {
   background-color: #d9d0c6;
   color: #22342c;
 }
 
-.acordeon-body {
+.desplegable-body {
   padding: 20px;
 }
 
