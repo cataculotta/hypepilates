@@ -1,0 +1,12 @@
+@use "../utilities/variables";
+
+
+@keyframes elevar {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(variables.$elevacion-tarjeta);
+    }
+}

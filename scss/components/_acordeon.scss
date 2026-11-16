@@ -2,12 +2,12 @@
 @use "../utilities/mixins";
 @use "../utilities/extends";
 
-.acordeon-item {
+.desplegable-item {
     background-color: variables.$color-fondo-claro;
     border-color: variables.$color-beige;
 }
 
-.acordeon-boton {
+.desplegable-boton {
     background-color: variables.$color-fondo-claro;
     color: variables.$color-verde-oscuro;
     font-weight: variables.$peso-negrita;
@@ -30,7 +30,7 @@
     }
 }
 
-.acordeon-body {
+.desplegable-body {
     padding: variables.$espacio-tarjeta;
 }
 

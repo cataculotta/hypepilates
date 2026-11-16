@@ -4,3 +4,10 @@
     flex-direction: column;
     gap: $separacion;
 }
+
+@mixin animacion($nombre, $duracion) {
+    animation-name: $nombre;
+    animation-duration: $duracion;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}

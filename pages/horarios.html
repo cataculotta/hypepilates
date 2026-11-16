@@ -7,6 +7,7 @@
     <title>Horarios - Hype Pilates</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -34,41 +35,40 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section data-aos="fade-up" data-aos-duration="1000">
             <article>
                 <h1>Horarios</h1>
                 <h2>Horarios de nuestras clases</h2>
                 <p>Ofrecemos una variedad de horarios para adaptarnos a tu rutina. Consulta nuestros horarios y
                     encuentra la clase que mejor se ajuste a tus necesidades.</p>
-                <div class="accordion acordeon" id="horarios">
-                    <div class="accordion-item acordeon-item">
+                <div class="accordion" id="horarios">
+                    <div class="accordion-item desplegable-item">
                         <h3 class="accordion-header">
-                            <button class="accordion-button collapsed acordeon-boton" type="button" data-bs-toggle="collapse"
+                            <button class="accordion-button collapsed desplegable-boton" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#semana" aria-expanded="false" aria-controls="semana">
                                 Lunes a Viernes: 7:00 AM - 9:00 PM
                             </button>
                         </h3>
                         <div id="semana" class="accordion-collapse collapse" data-bs-parent="#horarios">
-                            <div class="accordion-body acordeon-body">
+                            <div class="accordion-body desplegable-body">
                                 <ul class="lista-horarios">
                                     <li>Reformer: 7:00, 8:00, 9:00, 10:00, 11:00, 12:00, 13:00, 14:00, 15:00, 16:00,
                                         17:00, 18:00, 19:00 y 20:00</li>
-                                    <li>Mat: 7:00, 8:00, 9:00, 10:00, 11:00, 12:00, 13:00, 14:00, 15:00, 16:00, 17:00,
-                                        18:00 19:00 y 20:00</li>
-                                    <li>Funcional: 8:00, 10:00, 12:00, 14:00, 16:00, 18:00, y 20:00</li>
+                                    <li>Mat: 7:00, 8:00, 9:00, 10:00, 11:00, 12:00, 13:00, 14:00, 15:00, 16:00, 17:00, 18:00, 19:00 y 20:00</li>
+                                    <li>Funcional: 8:00, 10:00, 12:00, 14:00, 16:00, 18:00 y 20:00</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item acordeon-item">
+                    <div class="accordion-item desplegable-item">
                         <h3 class="accordion-header">
-                            <button class="accordion-button collapsed acordeon-boton" type="button" data-bs-toggle="collapse"
+                            <button class="accordion-button collapsed desplegable-boton" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#sabado" aria-expanded="false" aria-controls="sabado">
                                 Sábados: 9:00 AM - 1:00 PM
                             </button>
                         </h3>
                         <div id="sabado" class="accordion-collapse collapse" data-bs-parent="#horarios">
-                            <div class="accordion-body acordeon-body">
+                            <div class="accordion-body desplegable-body">
                                 <ul class="lista-horarios">
                                     <li>Reformer: 9:00 y 11:00</li>
                                     <li>Mat: 10:00</li>
@@ -77,15 +77,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item acordeon-item">
+                    <div class="accordion-item desplegable-item">
                         <h3 class="accordion-header">
-                            <button class="accordion-button collapsed acordeon-boton" type="button" data-bs-toggle="collapse"
+                            <button class="accordion-button collapsed desplegable-boton" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#domingo" aria-expanded="false" aria-controls="domingo">
                                 Domingos: Cerrado
                             </button>
                         </h3>
                         <div id="domingo" class="accordion-collapse collapse" data-bs-parent="#horarios">
-                            <div class="accordion-body acordeon-body">
+                            <div class="accordion-body desplegable-body">
                                 <p>Los domingos no hay clases. ¡Te esperamos el lunes!</p>
                             </div>
                         </div>
@@ -93,7 +93,7 @@
                 </div>
             </article>
         </section>
-        <section>
+        <section data-aos="fade-up" data-aos-duration="1000">
             <h2>Dónde estamos</h2>
             <div class="ubicacion">
                 <div class="ubicacion-info">
@@ -109,7 +109,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer data-aos="fade" data-aos-duration="1000" data-aos-offset="0">
         <p>&copy; Hype Pilates - Todos los derechos reservados</p>
         <a href="https://www.instagram.com/hypepilates" target="_blank">Seguinos en Instagram</a>
         <a href="https://www.tiktok.com/@hypepilates" target="_blank">Seguinos en Tiktok</a>
@@ -117,6 +117,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
