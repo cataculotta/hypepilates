@@ -54,6 +54,14 @@ p {
     font-size: 2rem;
   }
 }
+@keyframes elevar {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-4px);
+  }
+}
 header {
   padding: 24px;
 }
@@ -199,6 +207,10 @@ footer a:active {
 
 .tarjeta-clase:hover {
   border-color: #4f6658;
+  animation-name: elevar;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
 }
 
 .tarjeta-body {
@@ -206,6 +218,13 @@ footer a:active {
   grid-template-rows: auto 1fr auto;
   gap: 12px;
   padding: 20px;
+}
+
+.plan:hover {
+  animation-name: elevar;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
 }
 
 .plan-header {

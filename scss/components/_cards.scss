@@ -8,6 +8,7 @@
 
     &:hover {
         border-color: variables.$color-verde;
+        @include mixins.animacion(elevar, variables.$duracion-animacion);
     }
 }
 
@@ -21,6 +22,10 @@
 // Tarjetas de planes
 .plan {
     @extend %caja-clara;
+
+    &:hover {
+        @include mixins.animacion(elevar, variables.$duracion-animacion);
+    }
 }
 
 .plan-header {
