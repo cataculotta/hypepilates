@@ -27,12 +27,12 @@ $peso-negrita: 700;
 
 // espaciados
 $espacio-xs: 4px;
-$espacio-sm: 8px;
-$espacio-md: 12px;
+$espacio-sm: 8px; 
 $espacio-base: 16px;
 $espacio-tarjeta: 20px;
-$espacio-lg: 24px;
-$espacio-xl: 32px;
+$espacio-md: $espacio-base - $espacio-xs;  
+$espacio-lg: $espacio-base + $espacio-sm;   
+$espacio-xl: $espacio-base * 2;             
 
 // bordes
 $borde-fino: 1px;
