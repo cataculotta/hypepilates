@@ -98,7 +98,7 @@ header img {
   box-shadow: 0 2px 0 #4f6658;
 }
 .enlace-nav:active {
-  color: #d9d0c6;
+  color: #1e241f;
 }
 
 .enlace-actual {
@@ -170,13 +170,13 @@ footer a {
   color: #22342c;
 }
 footer a:hover {
-  color: #4f6658;
+  color: #1e241f;
 }
 footer a:focus {
   outline: 2px solid #4f6658;
 }
 footer a:active {
-  color: #5c6e63;
+  color: #1e241f;
 }
 
 @media (min-width: 1024px) {
@@ -242,7 +242,7 @@ footer a:active {
 
 .plan-frecuencia {
   margin-bottom: 0;
-  color: #5c6e63;
+  color: #22342c;
 }
 
 .plan-etiqueta {
